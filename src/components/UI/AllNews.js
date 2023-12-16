@@ -19,15 +19,15 @@ const AllNews = ({ allNews }) => (
       style={{ marginTrim: "block-end" }}
     >
       {allNews.map((data) => (
-        <Col key={data.id} className="gutter-row" span={6}>
+        <Col key={data.id} className="gutter-row" span={8}>
           <Card
             style={style}
             hoverable
             cover={
               <Image
-                width={200}
+                width={500}
                 height={200}
-                intrinsic
+                responsive
                 alt="example"
                 src={data?.image_url}
               />
